@@ -7,18 +7,35 @@ import entities.Employee;
 
 public class PayrollService {
 	
-	List<Employee> emplooyes = new ArrayList<>();
+	List<Employee> employees = new ArrayList<>();
 	
 	public PayrollService() {
 	}
 
 	public List<Employee> getEmplooyes() {
-		return emplooyes;
+		return employees;
 	}
 	
-	//cadastrar usuarios
-	//Listar funcionarios
-	//Consultar funcionarios
-	//Remover funcionarios
+	public void addEmployee(Employee employee) {
+		employees.add(employee);
+	}
+	
+	public void removeEmployee(Employee employee) {
+		employees.remove(employee);
+	}
+	public void getAllEmployees() {
+		for (Employee e : employees) {
+			System.out.println(e);
+		}
+	}
+	
+	public Employee findEmployeeById (long id) {
+		for (Employee e : employees) {
+			if (id == e.getId()) {
+				return e;
+			}
+		}
+		throw new PayrollException("O funcionario não existe!");
+	}
 	//Caucular folha de pagamento
 }
