@@ -7,7 +7,21 @@ public class Manager extends Employee{
 	}
 
 	@Override
-	public double calculateSalary() {
+	public double finalSalary() {
 		return getBaseSalary() + (getBaseSalary() * 0.2);
+	}
+	
+	@Override
+	public String toString() {
+		return "ID: " 
+				+ getId()
+				+ "\n"
+				+ "Nome: "
+				+ getName()
+				+ "\n"
+				+ "Tipo: Manager" 
+				+ "\n"
+				+ "Salario: "
+				+ String.format("%.2f", finalSalary());
 	}
 }

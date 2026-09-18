@@ -28,7 +28,21 @@ public class PartTimeEmployee extends Employee{
 	}
 
 	@Override
-	public double calculateSalary() {
+	public double finalSalary() {
 		return getBaseSalary() + (hoursWorked * hourlyRate);
+	}
+	
+	@Override
+	public String toString() {
+		return "ID: " 
+				+ getId()
+				+ "\n"
+				+ "Nome: "
+				+ getName()
+				+ "\n"
+				+ "Tipo: PartTimeEMployee" 
+				+ "\n"
+				+ "Salario: "
+				+ String.format("%.2f", finalSalary());
 	}
 }

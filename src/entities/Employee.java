@@ -36,5 +36,8 @@ public abstract class Employee {
 		this.baseSalary = baseSalary;
 	}
 	
-	public abstract double calculateSalary();
+	public abstract double finalSalary();
+	
+	@Override
+	public abstract String toString();
 }
