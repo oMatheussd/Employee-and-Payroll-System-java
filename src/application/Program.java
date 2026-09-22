@@ -131,19 +131,54 @@ public class Program {
 				sc.nextLine();
 				break;
 			case 2:
+				
+				System.out.println();
+				System.out.println("FUNCIONARIOS:");
+				System.out.println();
+				ps.getAllEmployees();
+				sc.nextLine();
 
 				break;
 
 			case 3:
+				
+				System.out.println();
+				System.out.print("ID: ");
+				long id = sc.nextLong();
+				sc.nextLine();
+				Employee emp = ps.findEmployeeById(id);
+				System.out.println(emp);
+				
+				sc.nextLine();
+				
 
 				break;
 
 			case 4:
-
+				
+				System.out.println();
+				System.out.print("ID: ");
+				id = sc.nextLong();
+				sc.nextLine();
+				emp = ps.findEmployeeById(id);
+				ps.removeEmployee(emp);
+				
+				System.out.println();
+				System.out.println("Funcionario removido com sucesso!");
+				System.out.println();
+				sc.nextLine();
+				
 				break;
 
 			case 5:
-
+				
+				System.out.println();
+				System.out.println("FOLHA DE PAGAMENTO");
+				System.out.println();
+				ps.getPayroll();
+				System.out.println();
+				sc.nextLine();
+				
 				break;
 
 			case 0:

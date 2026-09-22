@@ -22,6 +22,6 @@ public class Manager extends Employee{
 				+ "Tipo: Manager" 
 				+ "\n"
 				+ "Salario: "
-				+ String.format("%.2f", finalSalary());
+				+ String.format("%.2f", getBaseSalary());
 	}
 }

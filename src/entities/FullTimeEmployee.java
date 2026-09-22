@@ -24,6 +24,6 @@ public class FullTimeEmployee extends Employee {
 				+ "Tipo: FullTimeEmployee" 
 				+ "\n"
 				+ "Salario: "
-				+ String.format("%.2f", finalSalary());
+				+ String.format("%.2f", getBaseSalary());
 	}
 }

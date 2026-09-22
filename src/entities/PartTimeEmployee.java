@@ -43,6 +43,6 @@ public class PartTimeEmployee extends Employee{
 				+ "Tipo: PartTimeEMployee" 
 				+ "\n"
 				+ "Salario: "
-				+ String.format("%.2f", finalSalary());
+				+ String.format("%.2f", getBaseSalary());
 	}
 }
