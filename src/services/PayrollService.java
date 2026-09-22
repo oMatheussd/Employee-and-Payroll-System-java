@@ -12,7 +12,7 @@ public class PayrollService {
 	public PayrollService() {
 	}
 
-	public List<Employee> getEmplooyes() {
+	public List<Employee> getEmployees() {
 		return employees;
 	}
 	
@@ -44,7 +44,7 @@ public class PayrollService {
 	public double cauculatePayroll() {
 		double payroll = 0;
 		for (Employee p : employees) {
-			payroll = payroll += p.finalSalary();
+			payroll += p.finalSalary();
 		}
 		return payroll;
 	}

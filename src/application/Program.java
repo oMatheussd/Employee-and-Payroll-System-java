@@ -119,16 +119,15 @@ public class Program {
 						}
 
 					} while (employeeType != 1 && employeeType != 2 && employeeType != 3);
+					
+					System.out.println();
+					System.out.println("Funcionario cadastrado com sucesso!");
+					System.out.println();
+					sc.nextLine();
 
 				} catch (PayrollException e) {
 					System.out.println(e.getMessage());
 				}
-
-				System.out.println();
-				System.out.println("Funcionario cadastrado com sucesso!");
-				System.out.println();
-
-				sc.nextLine();
 				break;
 			case 2:
 				

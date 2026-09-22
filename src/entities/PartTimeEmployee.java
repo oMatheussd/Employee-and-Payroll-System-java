@@ -40,9 +40,9 @@ public class PartTimeEmployee extends Employee{
 				+ "Nome: "
 				+ getName()
 				+ "\n"
-				+ "Tipo: PartTimeEMployee" 
+				+ "Tipo: PartTimeEmployee" 
 				+ "\n"
 				+ "Salario: "
-				+ String.format("%.2f", getBaseSalary());
+				+ String.format("%.2f", finalSalary());
 	}
 }
